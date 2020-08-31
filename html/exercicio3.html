@@ -5,9 +5,162 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>exercicio3</title>
+        <style type="text/css">
+            table {
+                border: 2px;
+            }
+             
+            th {
+                border: 5px;
+                background-color: #46B43E;
+                padding: 5px;
+                width: 100px; 
+            }
+
+            td{
+                border: 2px;
+                background-color: #86E77E;
+                padding: 5px;
+                width: 100px;
+            }
+        </style>
     </head>
     <body>
-        
+        <h1>Exercício 3 - Tabelas e formulário</h1>
+        <br>
+
+        <h2>Relação Preço X Plano</h2>
+        <table>
+            <tr>
+                <th>ABRANGÊNCIA</th>
+                <th colspan="3">GRUPO DE ESTADOS (RS - SC - PR)</th>
+                <th colspan="3">NACIONAL</th>
+            </tr>
+
+            <tr>
+                <th>ACOMODAÇÃO</th>
+                <th colspan="2">COLETIVA</th>
+                <th>INDIVIDUAL</th>
+                <th colspan="2">COLETIVA</th>
+                <th>INDIVIDUAL</th>
+            </tr>
+
+            <tr>
+                <th>FAIXA ETÁRIA</th>
+                <th>BETA - PRATA 245</th>
+                <th>ALFA - PRATA 246</th>
+                <th>ALFA - OURO 247</th>
+                <th>BETA - PRATA 248</th>
+                <th>DELTA - PRATA 249</th>
+                <th>DELTA - OURO 250</th>
+            </tr>
+
+            <tr>
+                <th>0 - 18</th>
+                <td rowspan="2">R$ 186,46</td>
+                <td>R$ 270,81</td>
+                <td>R$ 331,00</td>
+                <td>R$ 197,87</td>
+                <td>R$ 287,40</td>
+                <td>R$ 351,26</td>
+            </tr>
+
+            <tr>
+                <th>19 - 23</th>
+                <td>R$ 280,76</td>
+                <td>R$ 379,87</td>
+                <td>R$ 207,58</td>
+                <td>R$ 297,94</td>
+                <td>R$ 403,15</td>
+            </tr>
+        </table>
+        <hr>
+        <br>
+
+        <h2>Formulário para Inscrição</h2>
+        <form>
+            <fieldset>
+                <legend>Dados pessoais</legend>    
+                <label>Insira seu nome: 
+                    <input type="text" name="name" size="30" maxlength="45"/><br>
+                </label><br>
+
+                <label>Insira sua idade: 
+                    <input type="number" name="age" size="2" maxlength="2"/><br>
+                </label><br>
+                
+                <label>Insira seu email: 
+                    <input type="email" name="email" size="10" maxlength="10"/><br>
+                </label><br>
+
+                <label>Insira o seu LinkedIn: 
+                    <input type="url" name="userprofile"/><br>
+                </label><br>
+            </fieldset>
+            <br>
+
+            <fieldset>
+                <legend>Dados do cartão</legend>
+                <p>Insira o número do seu cartão de crédito: 
+                    <input type="number" name="creditnumber" size="16" maxlenght="16"/>
+                </p>
+
+                <p>CVV: 
+                    <input type="number" name="CVV" size="3" maxlength="3"/>
+                    Vencimento: 
+                    <input type="date" name="expiredate"/>
+                </p>
+
+                <p>Senha do cartão:
+                    <input type="password" name="password" size="4" maxlength="6"/>
+                </p>
+
+                <p>Envie uma foto frente e verso do cartão:</p>
+                <input type="file" name="creditpic"/>
+            </fieldset>
+            <br>
+
+            <fieldset>
+                <legend>Teste de aptidão</legend>
+                
+                <p>Escolha o seu instrumento:</p>
+                <select name="instruments">
+                    <option value="guitar">Violão</option>
+                    <option value="eguitar">Guitarra</option>
+                    <option value="bass">Baixo</option>
+                    <option value="sax">Saxofone</option>
+                    <option value="trumpet">Trompete</option>
+                    <option value="accordion">Sanfona</option>
+                    <option value="harmonica">Gaita</option>
+                    <option value="violin">Violino</option>
+                    <option value="cello">Violoncelo</option>
+                    <option value="viola">Viola</option>
+                    <option value="piano">Piano</option>
+                </select>
+
+                <p>Qual gênero musical faz uso da síncopa?<br>
+                    <input type="radio" name="genre" value="bossanova"/>Bossa Nova
+                    <input type="radio" name="genre" value="reggae"/>Reggae
+                    <input type="radio" name="genre" value="guarania"/>Guarânia
+                    <input type="radio" name="genre" value="samba"/>Samba
+                </p>
+
+                <p>Indique quais compassos são compostos: <br>
+                    <input type="checkbox" name="compass" value="15/4"/>15/4
+                    <input type="checkbox" name="compass" value="5/4"/>5/4
+                    <input type="checkbox" name="compass" value="6/8"/>6/8
+                    <input type="checkbox" name="compass" value="3/4"/>3/4
+                    <input type="checkbox" name="compass" value="12/4"/>12/4
+                    <input type="checkbox" name="compass" value="9/8"/>9/8
+                    <input type="checkbox" name="compass" value="4/4"/>4/4
+                </p>
+
+            </fieldset>
+            <br>
+
+            <input type="submit" value="Salvar e enviar"/>
+
+        </form>
     </body>
     </html>
 </html>
