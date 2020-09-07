@@ -1,0 +1,76 @@
+body {
+    font-family: Verdana;
+    background-color: azure;
+}
+
+h1 {
+    color: burlywood;
+    background-color: whitesmoke;
+    text-decoration-line: overline;
+    text-decoration-color: greenyellow;
+    text-decoration-style: double;
+    text-transform: capitalize;
+}
+
+div {
+    background: gray;
+    width: 50px;
+    height: 25px;
+    padding: 25px;
+    margin: 25px;
+    border-style: outset;
+    border-width: 20px;
+    color: white;
+}
+
+p {
+    text-align: justify;
+    line-height: 15px;
+    background-color: indigo !important;
+}
+
+div p {
+    background-color: lightcoral;
+}
+
+.minha-classe {
+    font-size: 300%;
+    color: yellow;
+    text-indent: 30px;
+}
+
+#meu-id {
+    font-size: 300%;
+    color: green;
+    font-style: italic;
+}
+
+a[title="2"] {
+    font-family: cursive;
+    padding: 2px;
+}
+
+a[alt="texto"] {
+    color: orangered;
+}
+
+a[http^="http"] {
+    color: olivedrab;
+    padding: 2px;
+}
+
+img[src$="png"] {
+    color: paleturquoise;
+}
+
+p:not(.exemplo) {
+    padding: 2px;
+}
+
+p::first-letter {
+    font-size: 400%;
+}
+
+p::first-line {
+    font-size: 90%;
+}
