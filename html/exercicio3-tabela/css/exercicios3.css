@@ -1,0 +1,46 @@
+* {}
+
+p {
+    line-height: 1.5;
+    text-align: justify;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table,
+td,
+th {
+    border-color: black;
+    border-style: solid;
+    border-spacing: 1px;
+    text-align: center;
+}
+
+th,
+td {
+    padding: 5px;
+}
+
+th {
+    background-color: lightgray;
+}
+
+#au {
+    background-color: gold;
+}
+
+#ag {
+    background-color: #99B4BA;
+}
+
+#sn {
+    background-color: #C09075;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
