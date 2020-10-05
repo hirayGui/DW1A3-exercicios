@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ExerciciosJS</title>
+</head>
+
+<body>
+    <h1>Exercícios JavaScript 1</h1>
+    <hr><br>
+
+    <div>
+
+        <fieldset>
+
+            <legend> Soma </legend>
+            <label>1º valor <br><input type="text" id="valor1"></label><br>
+            <label>2º valor <br><input type="text" id="valor2"></label><br><br>
+            <input type="button" id="calcular" value="Calcular">
+
+        </fieldset>
+
+    </div>
+
+    <br>
+
+    <div>
+
+        <fieldset>
+
+            <legend>Fatorial</legend>
+            <label>Valor <br><input type="text" id="fatorial"></label><br><br>
+            <input type="button" id="calcfat" value="Calcular">
+
+        </fieldset>
+
+    </div>
+    <br>
+    <input type="button" id="calcTudo" value="Calcular tudo">
+
+</body>
+
+<script>
+    function soma() {
+        var v1 = document.getElementById("valor1").value;
+        var v2 = document.getElementById("valor2").value;
+        var res;
+
+        res = parseFloat(v1) + parseFloat(v2);
+
+        alert("Resultado da soma: " + res);
+
+    }
+
+    function fatorial() {
+        var f = parseFloat(document.getElementById("fatorial").value);
+        var num = 1;
+        var res;
+
+        for (var x = 1; x <= f; x++) {
+            num *= x;
+        }
+
+        alert("Resultado do fatorial: " + num);
+    }
+
+    var calcular = document.getElementById("calcular");
+    calcular.addEventListener("click", soma);
+
+    var calcfat = document.getElementById("calcfat");
+    calcfat.addEventListener("click", fatorial)
+
+    var calcTudo = document.getElementById("calcTudo");
+    calcTudo.addEventListener("click", soma);
+    calcTudo.addEventListener("click", fatorial);
+</script>
+
+</html>
